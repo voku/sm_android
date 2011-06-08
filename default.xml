@@ -14,7 +14,7 @@
   <default revision="froyo"
            remote="korg" />
 
-  <project path="build" name="SM-froyo/sm_android_build" remote="github">
+  <project path="build" name="voku/sm_android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
 
@@ -106,7 +106,7 @@
   <project path="external/skia" name="dh-harald/cm_android_external_skia" remote="github"/>
   <project path="external/sonivox" name="platform/external/sonivox"/>
   <project path="external/speex" name="platform/external/speex"/>
-  <project path="external/sqlite" name="SM-froyo/platform_external_sqlite" remote="github"/>
+  <project path="external/sqlite" name="voku/platform_external_sqlite" remote="github"/>
   <project path="external/srec" name="platform/external/srec"/>
   <!-- <project path="external/stlport" name="platform/external/stlport"/> -->
   <project path="external/stlport" name="platform/external/stlport" revision="c2afec726ce42ded67f2f5f41ec87d77cd6d2d34"/>
