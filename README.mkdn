@@ -6,7 +6,7 @@ familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
 To initialize your local repository using the cadavre's trees, use a command like this:
 
-    repo init -u git://github.com/nebkat/sm_android.git -b froyo
+    repo init -u git://github.com/voku/sm_android.git -b froyo
 
 Then to sync up:
 
