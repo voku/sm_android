@@ -9,7 +9,7 @@
            review="review.cyanogenmod.com" />
 
   <remote  name="gitorious"
-           fetch="git://gitorious.org/~" />
+           fetch="git://gitorious.org/" />
 
   <default revision="froyo"
            remote="korg" />
@@ -25,9 +25,10 @@
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller"/>
   <project path="bootable/recovery" name="Xmister/android_bootable_recovery" remote="github"/>
 
-  <!-- <project path="dalvik" name="gfunkmonk/android_dalvik" remote="github"/> -->
+  <!-- <project path="dalvik" name="tpruvot/android_dalvik" remote="github" revision="gingerbread"/> --> 
   <project path="dalvik" name="SM-froyo/android_dalvik" remote="github"/>
-  <project path="development" name="SM-froyo/android_development" remote="github"/>
+  <!-- <project path="development" name="SM-froyo/android_development" remote="github"/> -->
+  <project path="development" name="tpruvot/android_development" remote="github" revision="gingerbread"/> 
 
   <project path="device/samsung/spica" name="SM-froyo/sm_android_device_samsung_spica" remote="github"/>
 
@@ -42,15 +43,14 @@
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib"/>
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump"/>
   <project path="external/bsdiff" name="platform/external/bsdiff"/>
-  <project path="external/busybox" name="gfunkmonk/android_external_busybox" remote="github" revision="gingerbread"/>
+  <project path="external/busybox" name="tpruvot/android_external_busybox" remote="github" revision="gingerbread"/>
   <project path="external/bzip2" name="platform/external/bzip2"/>
   <project path="external/clearsilver" name="platform/external/clearsilver"/>
   <project path="external/compcache" name="CyanogenMod/android_external_compcache" remote="github" revision="master"/>
   <project path="external/dbus" name="platform/external/dbus"/>
   <project path="external/dhcpcd" name="platform/external/dhcpcd"/>
   <project path="external/dnsmasq" name="platform/external/dnsmasq"/>
-  <project path="external/dropbear" name="gfunkmonk/android_external_dropbear" remote="github" revision="gingerbread"/>
-  <project path="packages/apps/Droidwall" name="gfunkmonk/android_packages_apps_Droidwall" remote="github" revision="gingerbread"/>
+  <project path="external/dropbear" name="tpruvot/android_external_dropbear" remote="github" revision="gingerbread"/>
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" remote="github" revision="master"/>
   <project path="external/easymock" name="platform/external/easymock"/>
   <project path="external/elfcopy" name="platform/external/elfcopy"/>
@@ -76,7 +76,8 @@
   <project path="external/iptables" name="CyanogenMod/android_external_iptables" remote="github" revision="master"/>
   <project path="external/jdiff" name="platform/external/jdiff"/>
   <project path="external/jhead" name="platform/external/jhead"/>
-  <project path="external/jpeg" name="gfunkmonk/android_external_jpeg" remote="github"/>
+  <!-- <project path="external/jpeg" name="CyanogenMod/android_external_jpeg" remote="github"/> -->
+  <project path="external/jpeg" name="mansr/android_external_jpeg" remote="github" revision="armv6"/>
   <project path="external/jsr305" name="platform/external/jsr305"/>
   <project path="external/junit" name="platform/external/junit"/>
   <project path="external/kernel-headers" name="platform/external/kernel-headers"/>
@@ -159,11 +160,13 @@
   <project path="packages/apps/Contacts" name="gfunkmonk/android_packages_apps_Contacts" remote="github"/>
   <!-- <project path="packages/apps/DeskClock" name="gfunkmonk/android_packages_apps_DeskClock" remote="github" revision="gingerbread"/> -->
   <project path="packages/apps/DeskClock" name="SM-froyo/android_packages_apps_DeskClock" remote="github"/>
+  <project path="packages/apps/Droidwall" name="gfunkmonk/android_packages_apps_Droidwall" remote="github" revision="gingerbread"/>
   <project path="packages/apps/DSPManager" name="SM-froyo/android_packages_apps_DSPManager" remote="github"/>
   <project path="packages/apps/Email" name="gfunkmonk/android_packages_apps_Email" remote="github" revision="gingerbread"/>
   <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" revision="master"/>
   <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github"/>
-  <project path="packages/apps/Gallery3D" name="gfunkmonk/android_packages_apps_Gallery3D" remote="github" revision="gingerbread"/>
+  <!-- <project path="packages/apps/Gallery3D" name="gfunkmonk/android_packages_apps_Gallery3D" remote="github" revision="gingerbread"/> -->
+  <project path="packages/apps/Gallery3D" name="c-jiang/Gallery3D-Mod" remote="github" revision="froyo-mod"/>
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer"/>
   <project path="packages/apps/IM" name="platform/packages/apps/IM"/>
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2"/>

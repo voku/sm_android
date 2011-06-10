@@ -10,7 +10,7 @@ To initialize your local repository using the cadavre's trees, use a command lik
 
 Then to sync up:
 
-    repo sync -j10
+    repo sync -j15
 
 Prepare for build:
 
@@ -27,4 +27,4 @@ Optionally for gapps,3D libs from Intercept, live wallpapers and development (gc
 
 Build:
 
-    mka otapackage
+    mka otapackage -j8
