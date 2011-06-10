@@ -76,8 +76,7 @@
   <project path="external/iptables" name="CyanogenMod/android_external_iptables" remote="github" revision="master"/>
   <project path="external/jdiff" name="platform/external/jdiff"/>
   <project path="external/jhead" name="platform/external/jhead"/>
-  <!-- <project path="external/jpeg" name="CyanogenMod/android_external_jpeg" remote="github"/> -->
-  <project path="external/jpeg" name="mansr/android_external_jpeg" remote="github" revision="armv6"/>
+  <project path="external/jpeg" name="CyanogenMod/android_external_jpeg" remote="github"/>
   <project path="external/jsr305" name="platform/external/jsr305"/>
   <project path="external/junit" name="platform/external/junit"/>
   <project path="external/kernel-headers" name="platform/external/kernel-headers"/>
@@ -173,8 +172,8 @@
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2"/>
   <project path="packages/apps/ADWLauncher" name="CyanogenMod/android_packages_apps_ADWLauncher" remote="github"/>
   <project path="packages/apps/Mms" name="SM-froyo/android_packages_apps_Mms" remote="github"/>
-  <!-- <project path="packages/apps/Music" name="CyanogenMod/android_packages_apps_Music" remote="github"/> -->
-  <project path="packages/apps/Music" name="gfunkmonk/android_packages_apps_Music3" remote="github" revision="gingerbread"/>
+  <project path="packages/apps/Music" name="CyanogenMod/android_packages_apps_Music" remote="github"/> 
+  <!-- <project path="packages/apps/Music" name="gfunkmonk/android_packages_apps_Music3" remote="github" revision="gingerbread"/> -->
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller"/>
   <project path="packages/apps/Phone" name="CyanogenMod/android_packages_apps_Phone" remote="github"/>
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision"/>
