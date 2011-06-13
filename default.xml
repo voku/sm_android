@@ -26,7 +26,8 @@
   <project path="bootable/recovery" name="Xmister/android_bootable_recovery" remote="github"/>
 
   <!-- <project path="dalvik" name="tpruvot/android_dalvik" remote="github" revision="gingerbread"/> --> 
-  <project path="dalvik" name="SM-froyo/android_dalvik" remote="github"/>
+  <!-- <project path="dalvik" name="SM-froyo/android_dalvik" remote="github"/> -->
+  <project path="dalvik" name="voku/android_dalvik" remote="github"/> 
   <project path="development" name="SM-froyo/android_development" remote="github"/> 
   <!-- <project path="development" name="tpruvot/android_development" remote="github" revision="gingerbread"/>  -->
 
