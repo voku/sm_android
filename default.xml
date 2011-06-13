@@ -100,6 +100,8 @@
   <project path="external/proguard" name="platform/external/proguard"/>
   <!-- <project path="external/qemu" name="CyanogenMod/android_external_qemu" remote="github" revision="tools_r7" /> -->
   <project path="external/qemu" name="platform/external/qemu" revision="f6b937d9a93b474439c2e602bee39542db796beb"/>
+  <!-- <project path="external/qemu" name="android/platform_external_qemu" remote="github" revision="master"/> -->
+
   <project path="external/quake" name="platform/external/quake"/>
   <project path="external/rsync" name="dylex/android_external_rsync" remote="github" revision="master"/>
   <project path="external/safe-iop" name="platform/external/safe-iop"/>
@@ -118,7 +120,7 @@
   <project path="external/tslib" name="CyanogenMod/android_external_tslib" remote="github"/>
   <project path="external/tremolo" name="platform/external/tremolo"/>
   <project path="external/unrar" name="gfunkmonk/android_external_unrar" remote="github" revision="gingerbread"/>
-  <project path="external/v8" name="gfunkmonk/android_external_v8" remote="github"/>
+  <project path="external/v8" name="CyanogenMod/android_external_v8" remote="github"/>
   <!-- <project path="external/webkit" name="CyanogenMod/android_external_webkit" remote="github"/> -->
   <project path="external/webkit" name="SM-froyo/android_external_webkit" remote="github"/>
   <project path="external/wireless-tools" name="CyanogenMod/android_external_wireless-tools" remote="github" revision="master"/>
@@ -140,7 +142,7 @@
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps"/>
   <project path="hardware/qcom/mm-core" name="CyanogenMod/android_hardware_qcom_mm-core" remote="github"/>
   <project path="hardware/qcom/mm-video" name="CyanogenMod/android_hardware_qcom_mm-video" remote="github"/>
-  <project path="hardware/ril" name="SM-froyo/platform_hardware_ril" remote="github"/>
+  <project path="hardware/ril" name="dh-harald/platform_hardware_ril" remote="github"/>
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3"/>
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan"/>
 
@@ -165,6 +167,7 @@
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" remote="github"/>
   <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" revision="master"/>
   <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github"/>
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery"/>
   <!-- <project path="packages/apps/Gallery3D" name="gfunkmonk/android_packages_apps_Gallery3D" remote="github" revision="gingerbread"/> -->
   <project path="packages/apps/Gallery3D" name="c-jiang/Gallery3D-Mod" remote="github" revision="froyo-mod"/>
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer"/>
@@ -175,6 +178,7 @@
   <project path="packages/apps/Music" name="CyanogenMod/android_packages_apps_Music" remote="github"/> 
   <!-- <project path="packages/apps/Music" name="gfunkmonk/android_packages_apps_Music3" remote="github" revision="gingerbread"/> -->
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller"/>
+  <project path="packages/apps/Protips" name="CyanogenMod/android_packages_apps_Protips" remote="github"/>
   <project path="packages/apps/Phone" name="CyanogenMod/android_packages_apps_Phone" remote="github"/>
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision"/>
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox"/>
@@ -182,15 +186,15 @@
   <project path="packages/apps/SMParts" name="SM-froyo/android_packages_apps_SMParts" remote="github"/>
   <project path="packages/apps/SMPartsHelper" name="SM-froyo/android_packages_apps_SMPartsHelper" remote="github"/>
   <project path="packages/apps/SMUpdateNotify" name="nebkat/android_packages_apps_SMUpdateNotify" remote="github"/>
-  <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" remote="github"/>
+  <project path="packages/apps/SoundRecorder" name="peteralfonso/platform_packages_apps_SoundRecorder" remote="github" revision="gingerbread"/>
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk"/>
   <project path="packages/apps/Superuser" name="gfunkmonk/android_packages_apps_Superuser" remote="github" revision="gingerbread"/>
   <project path="packages/apps/Torch" name="gfunkmonk/android_packages_apps_Torch" remote="github"/>
   <project path="packages/apps/TSCalibration" name="CyanogenMod/android_packages_apps_TSCalibration" remote="github"/>
   <project path="packages/apps/VoiceDialer" name="SM-froyo/android_packages_apps_VoiceDialer" remote="github"/>
   <project path="packages/experimental" name="platform/packages/experimental"/>
-  <!-- <project path="packages/inputmethods/LatinIME" name="gfunkmonk/android_packages_inputmethods_LatinIME" remote="github" revision="gingerbread"/> -->
-  <project path="packages/inputmethods/LatinIME" name="bigriot/Gingerbread-Keyboard" remote="github" revision="master"/>	
+  <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" remote="github"/>
+  <!-- <project path="packages/inputmethods/LatinIME" name="bigriot/Gingerbread-Keyboard" remote="github" revision="master"/> -->
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn"/>
   <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME"/>
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider"/>
@@ -207,13 +211,14 @@
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker"/>
   <project path="packages/wallpapers/MagicSmoke" name="CyanogenMod/android_packages_wallpapers_MagicSmoke" remote="github"/>
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization"/>
+  <project path="external/DroidSSHd" name="tpruvot/android_external_droidsshd" remote="github" revision="gingerbread"/>
 
   <project path="prebuilt" name="nebkat/android_platform_prebuilt" remote="github"/>
   <!-- <project path="sdk" name="platform/sdk" revision="tools_r7"/> -->
   <project path="sdk" name="platform/sdk" revision="bf2cc1ba6983e23f14df45c20ee08f2d4e2b2fd3"/> 
   <project path="system/bluetooth" name="SM-froyo/sm_android_system_bluetooth" remote="github"/>
-  <project path="system/core" name="gfunkmonk/android_system_core" remote="github"/>
-  <project path="system/extras" name="gfunkmonk/android_system_extras" remote="github"/>
+  <project path="system/core" name="tpruvot/android_system_core" remote="github"/>
+  <project path="system/extras" name="CyanogenMod/android_system_extras" remote="github"/>
   <project path="system/netd" name="dh-harald/cm_android_system_netd" remote="github"/>
   <project path="system/vold" name="dh-harald/cm_android_system_vold" remote="github"/>
   <project path="system/wlan/ti" name="platform/system/wlan/ti"/>
