@@ -19,7 +19,8 @@
   </project>
 
   <!-- <project path="bionic" name="gfunkmonk/android_bionic" remote="github" revision="gingerbread"/> -->
-  <project path="bionic" name="CyanogenMod/android_bionic" remote="github"/>
+  <!-- <project path="bionic" name="CyanogenMod/android_bionic" remote="github"/> -->
+  <project path="bionic" name="voku/android_bionic" remote="github"/> 
 
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy"/>
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller"/>
