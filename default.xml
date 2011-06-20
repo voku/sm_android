@@ -134,7 +134,7 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github"/>
   <project path="external/zlib" name="android/platform_external_zlib" remote="github" revision="master"/>
 
-  <project path="frameworks/base" name="SM-froyo/sm_android_frameworks_base" remote="github"/>
+  <project path="frameworks/base" name="voku/sm_android_frameworks_base" remote="github"/>
   <project path="frameworks/ex" name="platform/frameworks/ex" revision="gingerbread"/>
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji"/>
 
