@@ -26,7 +26,7 @@ Optionally for gapps,3D libs from Intercept, live wallpapers and development (gc
     export SPICA_WITH_GOOGLE=1
     export SPICA_WITH_3D=1
     export SPICA_WITH_LIVEWALLPAPERS=1
-    export SPICA_WITH_DEV=1
+    export SPICA_WITH_DEV=0
 
 Build:
 
