@@ -15,7 +15,7 @@
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
 
-  <project path="bionic" name="CyanogenMod/android_bionic" remote="github" revision="9a380beae73854a3916dda83836d9a0cb1e09be3"/>
+  <project path="bionic" name="voku/android_bionic" remote="github"/>
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy"/>
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller"/>
   <project path="bootable/recovery" name="Xmister/android_bootable_recovery" remote="github"/>
@@ -98,7 +98,7 @@
   <project path="external/skia" name="dh-harald/cm_android_external_skia" remote="github"/>
   <project path="external/sonivox" name="android/platform_external_sonivox" remote="github" revision="master"/>
   <project path="external/speex" name="platform/external/speex"/>
-  <project path="external/sqlite" name="SM-froyo/platform_external_sqlite" remote="github"/>  
+  <project path="external/sqlite" name="voku/android_external_sqlite" remote="github" revision="gingerbread"/>  
   <project path="external/srec" name="platform/external/srec"/>
   <project path="external/stlport" name="platform/external/stlport"/>
   <project path="external/strace" name="CyanogenMod/android_external_strace" remote="github"/>
