@@ -152,7 +152,7 @@
   <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" revision="master"/>
   <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github"/>
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery"/>
-  <project path="packages/apps/Gallery3D" name="CyanogenMod/android_packages_apps_Gallery3D" remote="github" revision="gingerbread"/> -->
+  <project path="packages/apps/Gallery3D" name="voku/android_packages_apps_Gallery3D" remote="github" revision="gingerbread"/> 
   <project path="packages/apps/GenKiller" name="voku/android_packages_apps_GenKiller" remote="github"/>
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer"/>
   <project path="packages/apps/IM" name="platform/packages/apps/IM"/>
