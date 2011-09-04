@@ -75,7 +75,7 @@
   <project path="external/libffi" name="android/platform_external_libffi" remote="github" revision="master"/>
   <project path="external/libncurses" name="CyanogenMod/android_external_libncurses" remote="github" revision="libncurses-5.7-froyo"/>
   <project path="external/libpcap" name="android/platform_external_libpcap" remote="github" revision="master"/>
-  <project path="external/libpng" name="tpruvot/android_external_libpng" remote="github" revision="gingerbread"/>
+  <project path="external/libpng" name="CyanogenMod/android_external_libpng" remote="github" revision="gingerbread"/>
   <project path="external/libxml2" name="platform/external/libxml2"/>
   <project path="external/lzo" name="fries/android-external-liblzo" remote="github" revision="master"/>
   <project path="external/mtpd" name="CyanogenMod/android_external_mtpd" remote="github"/>
@@ -117,11 +117,16 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter"/>
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github"/>
   <project path="external/zlib" name="android/platform_external_zlib" remote="github" revision="master"/> 
+  <project path="external/tinyproxy" name="jahrome/tinyproxy" remote="github" revision="jahrome"/> 
+  <!-- <project path="external/curl" name="jahrome/curl-android" remote="github" revision="jahrome"/> -->
+  <project path="external/file" name="jahrome/file-android" remote="github" revision="jahrome"/>
+  <!-- <project path="external/screen" name="jahrome/screen-android" remote="github" revision="jahrome"/> -->
+  <project path="external/irssi" name="jahrome/irssi-android" remote="github" revision="jahrome"/> 
+  <project path="external/csync" name="jahrome/csync-android" remote="github" revision="jahrome"/> 
 
   <project path="frameworks/base" name="voku/sm_android_frameworks_base" remote="github"/>
   <project path="frameworks/ex" name="platform/frameworks/ex" revision="gingerbread"/>
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji"/>
-  <!-- <project path="frameworks/policies/base" name="dh-harald/cm_android_frameworks_policies_base" remote="github"/> -->
 
   <project path="hardware/alsa_sound" name="voku/android_hardware_alsa_sound" remote="github" revision="gingerbread"/>
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan"/>
@@ -156,15 +161,15 @@
   <project path="packages/apps/GenKiller" name="voku/android_packages_apps_GenKiller" remote="github"/>
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer"/>
   <project path="packages/apps/IM" name="platform/packages/apps/IM"/>
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2"/>
-  <project path="packages/apps/ADWLauncher" name="gfunkmonk/android_packages_apps_ADWLauncher" remote="github" revision="gingerbread"/> 
+  <project path="packages/apps/Launcher2" name="peteralfonso/platform_packages_apps_Launcher2" remote="github" revision="gingerbread" />
+  <!-- <project path="packages/apps/ADWLauncher" name="gfunkmonk/android_packages_apps_ADWLauncher" remote="github" revision="gingerbread"/> -->
   <project path="packages/apps/Mms" name="voku/android_packages_apps_Mms" remote="github"/>
   <project path="packages/apps/Music" name="voku/android_packages_apps_Music" remote="github"/> 
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller"/>
   <project path="packages/apps/Phone" name="voku/android_packages_apps_Phone" remote="github"/>
   <project path="packages/apps/Protips" name="CyanogenMod/android_packages_apps_Protips" remote="github"/>
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision"/>
-  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox"/>
+  <project path="packages/apps/QuickSearchBox" name="jahrome/QuickSearchBox" remote="github" revision="jahrome"/>
   <project path="packages/apps/Settings" name="voku/android_packages_apps_Settings" remote="github"/>
   <project path="packages/apps/SMParts" name="voku/android_packages_apps_SMParts" remote="github"/>
   <project path="packages/apps/SMPartsHelper" name="voku/android_packages_apps_SMPartsHelper" remote="github"/>
