@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote fetch="git://codeaurora.org/" 
+          name="caf" 
+          review="codeaurora.org"/>
+
   <remote  name="korg"
            fetch="git://android.git.kernel.org/"
-           review="review.source.android.com"/>
+           review="review.source.android.com" />
 
   <remote  name="github"
            fetch="git://github.com/"
-           review="review.cyanogenmod.com"/>
+           review="review.cyanogenmod.com" />
+
+  <remote  name="gitorious"
+           fetch="git://gitorious.org/~" />
 
   <default revision="froyo"
-           remote="korg"/>
+           remote="caf" />
 
-  <project path="build" name="voku/sm_android_build" remote="github">
+  <project path="build" name="SM-froyo/sm_android_build" remote="github">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
 
-  <project path="bionic" name="voku/android_bionic" remote="github"/>
+  <!-- <project path="bionic" name="gfunkmonk/android_bionic" remote="github" revision="gingerbread"/> -->
+  <project path="bionic" name="CyanogenMod/android_bionic" remote="github"/>
+
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy"/>
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller"/>
   <project path="bootable/recovery" name="Xmister/android_bootable_recovery" remote="github"/>
 
-  <project path="dalvik" name="voku/android_dalvik" remote="github"/> 
-  <project path="development" name="SM-froyo/android_development" remote="github"/> 
+  <!-- <project path="dalvik" name="gfunkmonk/android_dalvik" remote="github"/> -->
+  <project path="dalvik" name="SM-froyo/android_dalvik" remote="github"/>
+  <project path="development" name="SM-froyo/android_development" remote="github"/>
 
-  <project path="device/samsung/spica" name="voku/sm_android_device_samsung_spica" remote="github"/>
+  <project path="device/samsung/spica" name="SM-froyo/sm_android_device_samsung_spica" remote="github"/>
 
   <project path="external/alsa-lib" name="platform/external/alsa-lib"/>
   <project path="external/alsa-utils" name="platform/external/alsa-utils"/>
@@ -36,107 +46,105 @@
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib"/>
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump"/>
   <project path="external/bsdiff" name="platform/external/bsdiff"/>
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github"/>
+  <project path="external/busybox" name="gfunkmonk/android_external_busybox" remote="github" revision="gingerbread"/>
   <project path="external/bzip2" name="platform/external/bzip2"/>
   <project path="external/clearsilver" name="platform/external/clearsilver"/>
   <project path="external/compcache" name="CyanogenMod/android_external_compcache" remote="github" revision="master"/>
   <project path="external/dbus" name="platform/external/dbus"/>
   <project path="external/dhcpcd" name="platform/external/dhcpcd"/>
   <project path="external/dnsmasq" name="platform/external/dnsmasq"/>
-  <project path="external/dropbear" name="tpruvot/android_external_dropbear" remote="github" revision="gingerbread"/>
+  <project path="external/dropbear" name="gfunkmonk/android_external_dropbear" remote="github" revision="gingerbread"/>
+  <project path="packages/apps/Droidwall" name="gfunkmonk/android_packages_apps_Droidwall" remote="github" revision="gingerbread"/>
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" remote="github" revision="master"/>
   <project path="external/easymock" name="platform/external/easymock"/>
-  <project path="external/elfcopy" name="android/platform_external_elfcopy" remote="github" revision="master"/>
+  <project path="external/elfcopy" name="platform/external/elfcopy"/>
   <project path="external/elfutils" name="platform/external/elfutils"/>
   <project path="external/embunit" name="platform/external/embunit"/>
   <project path="external/emma" name="platform/external/emma"/>
-  <project path="external/esd" name="android/platform_external_esd" remote="github" revision="master"/>
-  <project path="external/expat" name="android/platform_external_expat" remote="github" revision="master"/>
+  <project path="external/esd" name="platform/external/esd"/>
+  <project path="external/expat" name="platform/external/expat"/>
   <project path="external/fdlibm" name="platform/external/fdlibm"/>
   <project path="external/flac" name="kruton/android_external_flac" remote="github" revision="master"/>
   <project path="external/freetype" name="CyanogenMod/android_external_freetype" remote="github" revision="gingerbread"/>
   <project path="external/fsck_msdos" name="platform/external/fsck_msdos"/>
   <project path="external/genext2fs" name="platform/external/genext2fs"/>
-  <project path="external/giflib" name="android/platform_external_giflib" remote="github" revision="master"/>
+  <project path="external/giflib" name="platform/external/giflib"/>
   <project path="external/grub" name="platform/external/grub"/>
   <project path="external/gtest" name="platform/external/gtest"/>
   <project path="external/guava" name="platform/external/guava"/>
-  <project path="external/icu4c" name="platform/external/icu4c"/> 
-  <project path="external/icu4j" name="voku/android_external_icu4j" remote="github" revision="master"/> 
-  <project path="external/iproute2" name="platform/external/iproute2"/> 
+  <project path="external/icu4c" name="platform/external/icu4c"/>
+  <project path="external/icu4j" name="SM-froyo/android_external_icu4j" remote="github" revision="master"/>
+  <project path="external/iproute2" name="platform/external/iproute2"/>
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools"/>
+
   <project path="external/iptables" name="CyanogenMod/android_external_iptables" remote="github" revision="master"/>
   <project path="external/jdiff" name="platform/external/jdiff"/>
-  <project path="external/jhead" name="android/platform_external_jhead" remote="github" revision="master"/>
-  <project path="external/jpeg" name="voku/android_external_jpeg" remote="github"/>
+  <project path="external/jhead" name="platform/external/jhead"/>
+  <project path="external/jpeg" name="gfunkmonk/android_external_jpeg" remote="github"/>
   <project path="external/jsr305" name="platform/external/jsr305"/>
   <project path="external/junit" name="platform/external/junit"/>
   <project path="external/kernel-headers" name="platform/external/kernel-headers"/>
-  <project path="external/libffi" name="android/platform_external_libffi" remote="github" revision="master"/>
+  <project path="external/libffi" name="platform/external/libffi"/>
   <project path="external/libncurses" name="CyanogenMod/android_external_libncurses" remote="github" revision="libncurses-5.7-froyo"/>
-  <project path="external/libpcap" name="android/platform_external_libpcap" remote="github" revision="master"/>
-  <project path="external/libpng" name="CyanogenMod/android_external_libpng" remote="github" revision="gingerbread"/>
+  <project path="external/libpcap" name="platform/external/libpcap"/>
+  <project path="external/libpng" name="CyanogenMod/android_external_libpng" remote="github"/>
   <project path="external/libxml2" name="platform/external/libxml2"/>
   <project path="external/lzo" name="fries/android-external-liblzo" remote="github" revision="master"/>
   <project path="external/mtpd" name="CyanogenMod/android_external_mtpd" remote="github"/>
   <project path="external/nano" name="cvpcs/android_external_nano" remote="github"/>
-  <project path="external/netcat" name="platform/external/netcat"/> 
+  <project path="external/netcat" name="platform/external/netcat"/>
   <project path="external/netperf" name="platform/external/netperf"/>
   <project path="external/neven" name="platform/external/neven"/>
-  <project path="external/opencore" name="voku/sm_android_external_opencore" remote="github"/>
-  <project path="external/openssl" name="CyanogenMod/android_external_openssl" remote="github"/> 
-  <project path="external/openvpn" name="CyanogenMod/android_external_openvpn" remote="github" revision="master"/> 
+  <project path="external/opencore" name="SM-froyo/sm_android_external_opencore" remote="github"/>
+  <project path="external/openssl" name="CyanogenMod/android_external_openssl" remote="github"/>
+  <project path="external/openvpn" name="CyanogenMod/android_external_openvpn" remote="github" revision="master"/>
   <project path="external/oprofile" name="platform/external/oprofile"/>
-  <project path="external/ping" name="android/platform_external_ping" remote="github" revision="master"/> 
+  <project path="external/ping" name="platform/external/ping"/>
   <project path="external/ppp" name="platform/external/ppp"/>
   <project path="external/proguard" name="platform/external/proguard"/>
-  <project path="external/qemu" name="platform/external/qemu" revision="f6b937d9a93b474439c2e602bee39542db796beb"/> 
-  <project path="external/quake" name="platform/external/quake" revision="483b595da7ef9bffa610d1992d565a26fd6b16ed"/> 
+  <!-- <project path="external/qemu" name="CyanogenMod/android_external_qemu" remote="github" revision="tools_r7" /> -->
+  <project path="external/qemu" name="platform/external/qemu" revision="f6b937d9a93b474439c2e602bee39542db796beb"/>
+  <project path="external/quake" name="platform/external/quake"/>
   <project path="external/rsync" name="dylex/android_external_rsync" remote="github" revision="master"/>
   <project path="external/safe-iop" name="platform/external/safe-iop"/>
   <project path="external/skia" name="dh-harald/cm_android_external_skia" remote="github"/>
-  <project path="external/sonivox" name="android/platform_external_sonivox" remote="github" revision="master"/>
+  <project path="external/sonivox" name="platform/external/sonivox"/>
   <project path="external/speex" name="platform/external/speex"/>
-  <project path="external/sqlite" name="voku/android_external_sqlite" remote="github" revision="gingerbread"/>  
+  <project path="external/sqlite" name="SM-froyo/platform_external_sqlite" remote="github"/>
   <project path="external/srec" name="platform/external/srec"/>
-  <project path="external/stlport" name="platform/external/stlport"/>
+  <!-- <project path="external/stlport" name="platform/external/stlport"/> -->
+  <project path="external/stlport" name="platform/external/stlport" revision="c2afec726ce42ded67f2f5f41ec87d77cd6d2d34"/>
   <project path="external/strace" name="CyanogenMod/android_external_strace" remote="github"/>
   <project path="external/svox" name="platform/external/svox"/>
-  <project path="external/tagsoup" name="android/platform_external_tagsoup" remote="github" revision="master"/>
-  <project path="external/tcpdump" name="android/platform_external_tcpdump" remote="github" revision="master"/>
-  <project path="external/tinyxml" name="android/platform_external_tinyxml" remote="github" revision="master"/>
+  <project path="external/tagsoup" name="platform/external/tagsoup"/>
+  <project path="external/tcpdump" name="platform/external/tcpdump"/>
+  <project path="external/tinyxml" name="platform/external/tinyxml"/>
   <project path="external/tslib" name="CyanogenMod/android_external_tslib" remote="github"/>
   <project path="external/tremolo" name="platform/external/tremolo"/>
   <project path="external/unrar" name="gfunkmonk/android_external_unrar" remote="github" revision="gingerbread"/>
-  <project path="external/v8" name="CyanogenMod/android_external_v8" remote="github"/>
-  <project path="external/vim" name="CyanogenMod/android_external_vim" remote="github" revision="master" />
-  <project path="external/webkit" name="voku/android_external_webkit" remote="github"/> 
-  <project path="external/wireless-tools" name="CyanogenMod/android_external_wireless-tools" remote="github" revision="master"/> 
+  <project path="external/v8" name="gfunkmonk/android_external_v8" remote="github"/>
+  <!-- <project path="external/webkit" name="CyanogenMod/android_external_webkit" remote="github"/> -->
+  <project path="external/webkit" name="SM-froyo/android_external_webkit" remote="github"/>
+  <project path="external/wireless-tools" name="CyanogenMod/android_external_wireless-tools" remote="github" revision="master"/>
   <project path="external/wpa_supplicant" name="CyanogenMod/android_external_wpa_supplicant" remote="github"/>
   <project path="external/wpa_supplicant_6" name="dh-harald/cm_android_external_wpa_supplicant_6" remote="github"/>
   <project path="external/xmlwriter" name="platform/external/xmlwriter"/>
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" remote="github"/>
-  <project path="external/zlib" name="android/platform_external_zlib" remote="github" revision="master"/> 
-  <project path="external/tinyproxy" name="jahrome/tinyproxy" remote="github" revision="jahrome"/> 
-  <!-- <project path="external/curl" name="jahrome/curl-android" remote="github" revision="jahrome"/> -->
-  <project path="external/file" name="jahrome/file-android" remote="github" revision="jahrome"/>
-  <!-- <project path="external/screen" name="jahrome/screen-android" remote="github" revision="jahrome"/> -->
-  <project path="external/irssi" name="jahrome/irssi-android" remote="github" revision="jahrome"/> 
-  <project path="external/csync" name="jahrome/csync-android" remote="github" revision="jahrome"/> 
+  <project path="external/zlib" name="platform/external/zlib"/>
 
-  <project path="frameworks/base" name="voku/sm_android_frameworks_base" remote="github"/>
+  <project path="frameworks/base" name="SM-froyo/sm_android_frameworks_base" remote="github"/>
   <project path="frameworks/ex" name="platform/frameworks/ex" revision="gingerbread"/>
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji"/>
 
-  <project path="hardware/alsa_sound" name="voku/android_hardware_alsa_sound" remote="github" revision="gingerbread"/>
+  <project path="hardware/alsa_sound" name="dh-harald/android_hardware_alsa_sound" remote="github"/>
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan"/>
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github"/>
   <project path="hardware/libhardware_legacy" name="dh-harald/cm_android_hardware_libhardware_legacy" remote="github"/>
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" remote="github"/>
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps"/> 
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps"/>
   <project path="hardware/qcom/mm-core" name="CyanogenMod/android_hardware_qcom_mm-core" remote="github"/>
   <project path="hardware/qcom/mm-video" name="CyanogenMod/android_hardware_qcom_mm-video" remote="github"/>
-  <project path="hardware/ril" name="dh-harald/platform_hardware_ril" remote="github"/>
+  <project path="hardware/ril" name="SM-froyo/platform_hardware_ril" remote="github"/>
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3"/>
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan"/>
 
@@ -145,51 +153,51 @@
   <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings"/>
   <project path="packages/apps/AndroidTerm" name="gfunkmonk/android_packages_apps_AndroidTerm" remote="github" revision="gingerbread"/>
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" remote="github"/>
-  <project path="packages/apps/Browser" name="voku/android_packages_apps_Browser" remote="github" revision="gingerbread"/>
+  <!-- <project path="packages/apps/Browser" name="gfunkmonk/android_packages_apps_Browser" remote="github"/> -->
+  <project path="packages/apps/Browser" name="SM-froyo/android_packages_apps_Browser" remote="github" revision="gingerbread"/>
   <project path="packages/apps/Calculator" name="gfunkmonk/android_packages_apps_Calculator" remote="github" revision="gingerbread"/>
+  <!-- <project path="packages/apps/Calendar" name="gfunkmonk/android_packages_apps_Calendar" remote="github" revision="gingerbread"/> -->
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar"/>
-  <project path="packages/apps/Camera" name="CyanogenMod/android_packages_apps_Camera" remote="github"/>
+  <project path="packages/apps/Camera" name="gfunkmonk/android_packages_apps_Camera" remote="github"/>
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller"/>
-  <project path="packages/apps/Contacts" name="voku/android_packages_apps_Contacts" remote="github"/>
-  <project path="packages/apps/DeskClock" name="voku/android_packages_apps_DeskClock" remote="github"/> 
-  <project path="packages/apps/DSPManager" name="voku/android_packages_apps_DSPManager" remote="github"/>
-  <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" remote="github" revision="gingerbread"/> 
+  <project path="packages/apps/Contacts" name="gfunkmonk/android_packages_apps_Contacts" remote="github"/>
+  <!-- <project path="packages/apps/DeskClock" name="gfunkmonk/android_packages_apps_DeskClock" remote="github" revision="gingerbread"/> -->
+  <project path="packages/apps/DeskClock" name="SM-froyo/android_packages_apps_DeskClock" remote="github"/>
+  <project path="packages/apps/DSPManager" name="SM-froyo/android_packages_apps_DSPManager" remote="github"/>
+  <project path="packages/apps/Email" name="gfunkmonk/android_packages_apps_Email" remote="github" revision="gingerbread"/>
   <project path="packages/apps/FileManager" name="CyanogenMod/android_packages_apps_FileManager" remote="github" revision="master"/>
   <project path="packages/apps/FM" name="CyanogenMod/android_packages_apps_FM" remote="github"/>
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery"/>
-  <project path="packages/apps/Gallery3D" name="voku/android_packages_apps_Gallery3D" remote="github" revision="gingerbread"/> 
-  <project path="packages/apps/GenKiller" name="voku/android_packages_apps_GenKiller" remote="github"/>
+  <project path="packages/apps/Gallery3D" name="gfunkmonk/android_packages_apps_Gallery3D" remote="github" revision="gingerbread"/>
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer"/>
   <project path="packages/apps/IM" name="platform/packages/apps/IM"/>
-  <project path="packages/apps/Launcher2" name="peteralfonso/platform_packages_apps_Launcher2" remote="github" revision="gingerbread" />
-  <!-- <project path="packages/apps/ADWLauncher" name="gfunkmonk/android_packages_apps_ADWLauncher" remote="github" revision="gingerbread"/> -->
-  <project path="packages/apps/Mms" name="voku/android_packages_apps_Mms" remote="github"/>
-  <project path="packages/apps/Music" name="voku/android_packages_apps_Music" remote="github"/> 
+  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2"/>
+  <project path="packages/apps/ADWLauncher" name="gfunkmonk/android_packages_apps_ADWLauncher" remote="github"/>
+  <project path="packages/apps/Mms" name="SM-froyo/android_packages_apps_Mms" remote="github"/>
+  <project path="packages/apps/Music" name="gfunkmonk/android_packages_apps_Music" remote="github"/>
+  <project path="packages/apps/Music3" name="gfunkmonk/android_packages_apps_Music3" remote="github" revision="gingerbread"/>
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller"/>
-  <project path="packages/apps/Phone" name="voku/android_packages_apps_Phone" remote="github"/>
-  <project path="packages/apps/Protips" name="CyanogenMod/android_packages_apps_Protips" remote="github"/>
+  <project path="packages/apps/Phone" name="gfunkmonk/android_packages_apps_Phone" remote="github"/>
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision"/>
-  <project path="packages/apps/QuickSearchBox" name="jahrome/QuickSearchBox" remote="github" revision="jahrome"/>
-  <project path="packages/apps/Settings" name="voku/android_packages_apps_Settings" remote="github"/>
-  <project path="packages/apps/SMParts" name="voku/android_packages_apps_SMParts" remote="github"/>
-  <project path="packages/apps/SMPartsHelper" name="voku/android_packages_apps_SMPartsHelper" remote="github"/>
+  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox"/>
+  <project path="packages/apps/Settings" name="SM-froyo/android_packages_apps_Settings" remote="github"/>
+  <project path="packages/apps/SMParts" name="SM-froyo/android_packages_apps_SMParts" remote="github"/>
+  <project path="packages/apps/SMPartsHelper" name="SM-froyo/android_packages_apps_SMPartsHelper" remote="github"/>
   <project path="packages/apps/SMUpdateNotify" name="nebkat/android_packages_apps_SMUpdateNotify" remote="github"/>
-  <project path="packages/apps/SoundRecorder" name="peteralfonso/platform_packages_apps_SoundRecorder" remote="github" revision="gingerbread"/>
+  <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" remote="github"/>
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk"/>
   <project path="packages/apps/Superuser" name="gfunkmonk/android_packages_apps_Superuser" remote="github" revision="gingerbread"/>
-  <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="github"/>
+  <project path="packages/apps/Torch" name="gfunkmonk/android_packages_apps_Torch" remote="github"/>
   <project path="packages/apps/TSCalibration" name="CyanogenMod/android_packages_apps_TSCalibration" remote="github"/>
-  <project path="packages/apps/VoiceDialer" name="voku/android_packages_apps_VoiceDialer" remote="github"/>
-  <!-- <project path="external/DroidSSHd" name="tpruvot/android_external_droidsshd" remote="github" revision="gingerbread"/> -->
+  <project path="packages/apps/VoiceDialer" name="SM-froyo/android_packages_apps_VoiceDialer" remote="github"/>
   <project path="packages/experimental" name="platform/packages/experimental"/>
-  <!-- <project path="packages/inputmethods/LatinIME" name="voku/android_packages_inputmethods_LatinIME" remote="github"/> -->
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" revision="master"/>
+  <project path="packages/inputmethods/LatinIME" name="gfunkmonk/android_packages_inputmethods_LatinIME" remote="github" revision="gingerbread"/>
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn"/>
   <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME"/>
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider"/>
-  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider"/> 
+  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider"/>
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider"/>
-  <project path="packages/providers/DownloadProvider" name="voku/android_packages_providers_DownloadProvider" remote="github" revision="gingerbread"/>
+  <!-- <project path="packages/providers/DownloadProvider" name="CyanogenMod/android_packages_providers_DownloadProvider" remote="github"/> -->
+  <project path="packages/providers/DownloadProvider" name="SM-froyo/android_packages_providers_DownloadProvider" remote="github" revision="gingerbread"/>
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider"/>
   <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider"/>
   <project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" remote="github"/>
@@ -202,14 +210,14 @@
 
   <project path="prebuilt" name="nebkat/android_platform_prebuilt" remote="github"/>
   <!-- <project path="sdk" name="platform/sdk" revision="tools_r7"/> -->
-  <project path="sdk" name="platform/sdk" revision="bf2cc1ba6983e23f14df45c20ee08f2d4e2b2fd3"/>
-  <project path="system/bluetooth" name="voku/sm_android_system_bluetooth" remote="github"/>
-  <project path="system/core" name="CyanogenMod/android_system_core" remote="github"/>
-  <project path="system/extras" name="CyanogenMod/android_system_extras" remote="github"/>
+  <project path="sdk" name="platform/sdk" revision="bf2cc1ba6983e23f14df45c20ee08f2d4e2b2fd3"/> 
+  <project path="system/bluetooth" name="SM-froyo/sm_android_system_bluetooth" remote="github"/>
+  <project path="system/core" name="gfunkmonk/android_system_core" remote="github"/>
+  <project path="system/extras" name="gfunkmonk/android_system_extras" remote="github"/>
   <project path="system/netd" name="dh-harald/cm_android_system_netd" remote="github"/>
   <project path="system/vold" name="dh-harald/cm_android_system_vold" remote="github"/>
   <project path="system/wlan/ti" name="platform/system/wlan/ti"/>
 
-  <project path="vendor/spica" name="voku/sm_android_vendor_spica" remote="github"/>
+  <project path="vendor/spica" name="SM-froyo/sm_android_vendor_spica" remote="github"/>
 
 </manifest>
