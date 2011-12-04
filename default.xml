@@ -99,7 +99,7 @@
   <project path="external/proguard" name="platform/external/proguard"/>
   <!-- <project path="external/qemu" name="CyanogenMod/android_external_qemu" remote="github" revision="tools_r7" /> -->
   <project path="external/qemu" name="platform/external/qemu" revision="f6b937d9a93b474439c2e602bee39542db796beb"/>
-  <project path="external/quake" name="platform/external/quake"/>
+  <project path="external/quake" name="android_external_quake" remote="github" revision="master"/>
   <project path="external/rsync" name="voku/android_external_rsync" remote="github" revision="master"/>
   <project path="external/vim" name="voku/android_external_vim" remote="github" revision="master"/>
   <project path="external/safe-iop" name="platform/external/safe-iop"/>
