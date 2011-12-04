@@ -173,7 +173,7 @@
   <project path="packages/apps/Settings" name="voku/android_packages_apps_Settings" remote="github"/>
   <project path="packages/apps/SMParts" name="voku/android_packages_apps_SMParts" remote="github"/>
   <project path="packages/apps/SMPartsHelper" name="voku/android_packages_apps_SMPartsHelper" remote="github"/>
-  <project path="packages/apps/SMUpdateNotify" name="voku/android_packages_apps_SMUpdateNotify" remote="github"/>
+  <project path="packages/apps/SMUpdateNotify" name="voku/android_packages_apps_SMUpdateNotify" remote="github" revision="master"/>
   <project path="packages/apps/SoundRecorder" name="voku/android_packages_apps_SoundRecorder" remote="github"/>
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk"/>
   <project path="packages/apps/Superuser" name="voku/android_packages_apps_Superuser" remote="github" revision="gingerbread"/>
