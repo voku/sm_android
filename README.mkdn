@@ -13,7 +13,7 @@ To initialize your local repository using the cadavre's trees, use a command lik
 
 Then to sync up:
 
-    repo sync -j15
+    repo sync
 
 Prepare for build:
 
