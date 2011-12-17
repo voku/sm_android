@@ -4,7 +4,8 @@ Getting Started
 To get started with Android, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
-    curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+    sudo su -
+    curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > /usr/bin/repo
     chmod +x /usr/bin/repo
 
 To initialize your local repository using the cadavre's trees, use a command like this:
