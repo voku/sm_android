@@ -99,7 +99,7 @@
   <project path="external/proguard" name="platform/external/proguard"/>
   <!-- <project path="external/qemu" name="CyanogenMod/android_external_qemu" remote="github" revision="tools_r7" /> -->
   <project path="external/qemu" name="platform/external/qemu" revision="f6b937d9a93b474439c2e602bee39542db796beb"/>
-  <project path="external/quake" name="android_external_quake" remote="github" revision="master"/>
+  <project path="external/quake" name="voku/android_external_quake" remote="github" revision="master"/>
   <project path="external/rsync" name="voku/android_external_rsync" remote="github" revision="master"/>
   <project path="external/vim" name="voku/android_external_vim" remote="github" revision="master"/>
   <project path="external/safe-iop" name="platform/external/safe-iop"/>
@@ -184,7 +184,7 @@
   <project path="packages/inputmethods/LatinIME" name="voku/android_packages_inputmethods_LatinIME" remote="github" revision="gingerbread"/>
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn"/>
   <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME"/>
-  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider"/>
+  <project path="packages/providers/ApplicationsProvider" name="voku/android_packages_providers_ApplicationsProvider" remote="github"/>
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider"/>
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider"/>
   <project path="packages/providers/DownloadProvider" name="voku/android_packages_providers_DownloadProvider" remote="github" revision="gingerbread"/>
