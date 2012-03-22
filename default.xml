@@ -75,8 +75,8 @@
   <project path="external/iptables" name="CyanogenMod/android_external_iptables" remote="github" revision="master"/>
   <project path="external/jdiff" name="platform/external/jdiff"/>
   <project path="external/jhead" name="platform/external/jhead"/>
-  <!-- <project path="external/jpeg" name="voku/android_external_jpeg" remote="github"/> -->
-  <project path="external/jpeg" name="AOKP/external_jpeg" remote="github" revision="master"/>
+  <project path="external/jpeg" name="voku/android_external_jpeg" remote="github"/>
+  <!-- <project path="external/jpeg" name="AOKP/external_jpeg" remote="github" revision="master"/> -->
   <project path="external/jsr305" name="platform/external/jsr305"/>
   <project path="external/junit" name="platform/external/junit"/>
   <project path="external/kernel-headers" name="platform/external/kernel-headers"/>
@@ -193,7 +193,7 @@
   <project path="packages/providers/DownloadProvider" name="voku/android_packages_providers_DownloadProvider" remote="github" revision="gingerbread"/>
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider"/>
   <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider"/>
-  <project path="packages/providers/MediaProvider" name="voku/android_packages_providers_MediaProvider" remote="github"/>
+  <project path="packages/providers/MediaProvider" name="voku/android_packages_providers_MediaProvider" remote="github" evision="gingerbread"/>
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider"/>
   <project path="packages/providers/UserDictionaryProvider" name="voku/android_packages_providers_UserDictionaryProvider" remote="github"/>
   <project path="packages/wallpapers/Basic" name="voku/android_packages_wallpapers_Basic" remote="github"/>
