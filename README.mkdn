@@ -35,7 +35,19 @@ To initialize your local repository using the CyanogenMod trees, use a command l
 
 Then to sync up:
 
-    repo sync
+    repo sync -j16
+
+From root android directory:
+
+    . build/envsetup.sh
+
+Connect your Galaxy S II (with installed CM10) via USB with your PC (+ installed "adb shell") & fetch some needed files: 
+
+    ./device/samsung/i9100/proprietary-files.sh
+
+Build a new CM10 version:
+
+    brunch i9100
 
 Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.com/) for building instructions.
 
