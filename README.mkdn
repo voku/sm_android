@@ -7,7 +7,9 @@ Getting Started
 To get started with Android, you'll need to get familiar with > repo & git & github.com
 
 git -> http://try.github.com/
+
 repo -> http://source.android.com/source/using-repo.html
+
 github.com -> https://help.github.com/
 
 
