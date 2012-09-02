@@ -1,6 +1,94 @@
 CyanogenMod
 ===========
 
+Getting Started
+---------------
+
+To get started with Android, you'll need to get familiar with > repo & git & github.com
+
+git -> http://try.github.com/
+repo -> http://source.android.com/source/using-repo.html
+github.com -> https://help.github.com/
+
+
+Info:
+- this HowTo is tested with Debian
+- you can install the Linux-System on your physical HDD or you can use e.g. VirtualBox for the next steps
+
+
+First step: Install Linux & Prepare the Build Environment
+
+After the installation on your HDD or on a virtual-Disk (> 10GB) you need to enable a new repository to install sun-java...
+
+    sudo gedit /etc/apt/sources.list
+
+    [...]
+    ## Uncomment the following two lines to add software from Canonical's
+    ## 'partner' repository.
+    ## This software is not part of Ubuntu, but is offered by Canonical and the
+    ## respective vendors as a service to Ubuntu users.
+    ############ Activated to get sun-java6-jdk ###################
+    deb http://archive.canonical.com/ubuntu natty partner
+    deb-src http://archive.canonical.com/ubuntu natty partner
+    [...]
+
+now update the repositories:
+
+    sudo apt-get update
+
+And install new software via "apt-get" or "aptitude" ... (maybe you need "sudo su" if you use Ubuntu)
+
+    apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.6-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev sun-java6-jdk pngcrush schedtool
+
+Now we need the repo-software: (try the commands without root-privileges) 
+
+    mkdir -p ~/bin/
+    curl http://android.git.kernel.org/repo > ~/bin/repo
+    chmod +x ~/bin/repo
+
+2nd step: building Android from sources
+Then we need the android-sources: You will find many different versions of the Android software on github.com e.g. https://github.com/CyanogenMod/android_frameworks_base -> you can see (upper right corner) that there are more than > 750 forks only from this project!
+
+To initialize your local repository, use a command like this:
+
+    mkdir -p ~/android/SGS2/CM10/
+    cd ~/android/SGS2/CM10/
+    repo init -u git://github.com/CyanogenMod/android.git -b jellybean
+
+PS: you can edit the sources in this file: .repo/manifests/default.xml
+
+Download (sync) the sources:
+
+    repo sync -j16
+
+Prepare for build: (from root of your android directory e.g. ~/android/SGS2/CM10/)
+
+    . build/envsetup.sh
+
+Now connect your Galaxy S II (with installed CM10) via USB with your PC (+ installed "adb shell") & fetch some needed files: 
+
+    ./device/samsung/i9100/proprietary-files.sh
+
+Build a new CM10 version for S2 (i9100):
+
+    brunch i9100
+
+
+Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.com/) for building instructions.
+
+For more information on this Github Organization and how it is structured, 
+please [read the wiki article](http://wiki.cyanogenmod.com/index.php/Github_Organization)
+
+PS: 
+bug-fixes / updates can be found here:
+- https://android-review.googlesource.com/
+- http://review.cyanogenmod.com/
+- https://www.codeaurora.org/gitweb/quic/la/?o=age
+- http://218.211.38.204/?o=age
+- https://github.com/android
+- https://github.com/cyanogenmod
+- ... 
+
 Submitting Patches
 ------------------
 Patches are always welcome!  Please submit your patches via CyanogenMod Gerrit!
@@ -22,37 +110,6 @@ Commit your patches in a single commit. Squash multiple commit using this comman
 
 To view the status of your and others' patches, visit [CyanogenMod Code Review](http://review.cyanogenmod.com/)
 
-
-Getting Started
----------------
-
-To get started with Android/CyanogenMod, you'll need to get
-familiar with [Git and Repo](http://source.android.com/download/using-repo).
-
-To initialize your local repository using the CyanogenMod trees, use a command like this:
-
-    repo init -u git://github.com/CyanogenMod/android.git -b jellybean
-
-Then to sync up:
-
-    repo sync -j16
-
-From root android directory:
-
-    . build/envsetup.sh
-
-Connect your Galaxy S II (with installed CM10) via USB with your PC (+ installed "adb shell") & fetch some needed files: 
-
-    ./device/samsung/i9100/proprietary-files.sh
-
-Build a new CM10 version:
-
-    brunch i9100
-
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.com/) for building instructions.
-
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.cyanogenmod.com/index.php/Github_Organization)
 
 Buildbot
 --------
