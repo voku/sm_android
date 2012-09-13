@@ -15,7 +15,7 @@
            remote="github"
            sync-j="4" />
 
-  <project path="build" name="CyanogenMod/android_build">
+  <project path="build" name="voku/sm_android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -27,7 +27,7 @@
   <project path="bootable/diskinstaller" name="CyanogenMod/android_bootable_diskinstaller" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" />
   <project path="cts" name="CyanogenMod/android_cts" />
-  <project path="dalvik" name="CyanogenMod/android_dalvik" />
+  <project path="dalvik" name="voku/android_dalvik" />
   <project path="development" name="CyanogenMod/android_development" />
   <project path="device/common" name="CyanogenMod/android_device_common" />
   <project path="device/samsung/i9100" name="teamhacksung/android_device_samsung_i9100" />
